@@ -66,3 +66,7 @@
 6. `mysql sampdb < insert_score.sql -u root -p`
 
 7. **CHECK:**`select * from absence;`
+
+### make sure the tables are in a known state:
+
+1. `mysql -u root -p < init_all_tables.sh sampdb`

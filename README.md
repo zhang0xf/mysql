@@ -1,6 +1,8 @@
 # mysql
 《mysql》 fifth edition
 
+![Image](https://github.com/zhang0xf/mysql5/blob/main/images/cover/mysql5th.PNG)
+
 [files about "sampdb" which produced by author](http://www.kitebird.com/mysql-book/)
 
 ### install database "sampdb":

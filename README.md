@@ -23,14 +23,7 @@
 
 ### create the tables:
 
-* create_absence.sql
-* create_grade_event.sql
-* create_member.sql
-* create_president.sql
-* create_score.sql
-* create_student.sql
-
-1. **FIRST(As a foreign key to other tables)：**`mysql sampdb < create_student.sql -u root -p`
+1. `mysql sampdb < create_student.sql -u root -p`**(do firstly as a foreign key)**
 
 2. `mysql sampdb < create_absence.sql -u root -p`
 
@@ -44,16 +37,18 @@
 
 7. **CHECK:**`use sampdb; show tables;`
 
+#### (script files)
+
+* create_absence.sql
+* create_grade_event.sql
+* create_member.sql
+* create_president.sql
+* create_score.sql
+* create_student.sql
+
 ### insert the initial contents of the sampdb database tables:
 
-* insert_absence.sql
-* insert_event.sql
-* insert_member.sql
-* insert_president.sql
-* insert_score.sql
-* insert_student.sql
-
-1. **FIRST INSERT STUDENT(As a foreign key to other tables):**`mysql sampdb < insert_student.sql -u root -p`
+1. `mysql sampdb < insert_student.sql -u root -p`**(do firstly as a foreign key)**
 
 2. `mysql sampdb < insert_absence.sql -u root -p`
 
@@ -66,6 +61,15 @@
 6. `mysql sampdb < insert_score.sql -u root -p`
 
 7. **CHECK:**`select * from absence;`
+
+#### (script files)
+
+* insert_absence.sql
+* insert_event.sql
+* insert_member.sql
+* insert_president.sql
+* insert_score.sql
+* insert_student.sql
 
 ### make sure the tables are in a known state:
 
